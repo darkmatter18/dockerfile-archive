@@ -16,7 +16,7 @@ docker run -p 49160:8080 -d <your username>/node-web-app
 #Go inside the container:
 docker exec -it <container id> /bin/bash
 
-#Test the container is creted or not
+#Test the container is created or not
 
 docker ps
 OR
