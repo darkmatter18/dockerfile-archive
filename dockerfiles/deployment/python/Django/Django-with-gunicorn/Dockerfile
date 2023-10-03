@@ -1,10 +1,10 @@
-FROM python:3.11-slim as bigimage
+FROM python:3.12-slim as bigimage
 WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 RUN python -m pip install --upgrade pip && pip wheel --wheel-dir=/root/wheels -r /app/requirements.txt
 
 
-FROM python:3.11-slim as smallimage
+FROM python:3.12-slim as smallimage
 ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 COPY --from=bigimage /root/wheels /root/wheels
