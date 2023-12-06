@@ -1,0 +1,11 @@
+version: '3'
+services:
+  express-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+    restart: always # "restart: always" ensures that your Express.js application with PM2 will be automatically

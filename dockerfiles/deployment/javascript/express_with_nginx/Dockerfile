@@ -10,14 +10,14 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the Next.js app files to the container
+# Copy the Express.js app files to the container
 COPY . .
 
-# Build the Next.js app
-RUN npm run build
-
-# Expose the port on which the app will run (change it as per your Next.js configuration)
+# Expose the port on which the app will run (change it as per your Express.js configuration)
 EXPOSE 3000
 
-# Start the Next.js app
-CMD ["npm", "start"]
+# Install PM2 globally
+RUN npm install -g pm2
+
+# Start the Express.js app with PM2
+CMD ["pm2-runtime", "npm", "--", "start"]

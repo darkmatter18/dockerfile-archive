@@ -1,0 +1,12 @@
+{
+  "name": "express_with_nginx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start app.js --name myExpressApp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
