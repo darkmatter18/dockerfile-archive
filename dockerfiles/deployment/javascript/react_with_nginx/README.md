@@ -12,8 +12,8 @@ This project demonstrates how to set up a React application with Nginx using Doc
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-repo/react-nginx-docker.git
-    cd react-nginx-docker
+    git clone https://github.com/darkmatter18/dockerfile-archive.git
+    cd dockerfiles/deployment/javascript/react-nginx-docker
     ```
 
 2. Build and run the Docker containers:
@@ -55,7 +55,3 @@ This project demonstrates how to set up a React application with Nginx using Doc
     ```bash
     docker-compose logs -f
     ```
-
-## License
-
-This project is licensed under the MIT License.
